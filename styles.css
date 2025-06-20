@@ -163,6 +163,7 @@ h3 {
 
 
 /* Contact page css section */
+/* Contact page css section */
 .p-text {
     color: #b7abc4;
     text-align: center;
@@ -170,7 +171,7 @@ h3 {
 }
 
 .button-contact {
-   display: inline-block;
+    display: block; /* Already changed to block in your code */
     padding: 10px 20px;
     text-decoration: none;
     font-family: Arial, sans-serif;
@@ -181,14 +182,11 @@ h3 {
     color: #ffffff;
     border: 2px solid #5c3c6d;
     border-radius: 5px;
-/* testing hovers */
-transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
-/* Ensure clickable area */
+    /* testing hovers */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+    /* Ensure clickable area */
     cursor: pointer;
-
-     display: block; /* Change from inline-block to block */
     margin: 0 auto; 
-
     margin-bottom: 30px;
 }
 
@@ -223,8 +221,8 @@ transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease,
 }
 
 .youtube:hover {
-  transform: scale(1.01);
-  cursor: pointer;
+    transform: scale(1.01);
+    cursor: pointer;
 }
 
 .h1-contact {
@@ -233,8 +231,11 @@ transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease,
 }
 
 .contact-image {
-    width: 500px;
+    width: 100%;
+    max-width: 200px; /* Reduced max-width */
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 
